@@ -10,6 +10,8 @@ const OrderHistory = () => {
         return  total += acc.data.orderTotal    
     },0)
 
+
+
     return (
         <div className="userInfo-previous-orders">  
             <h3 className="previous-orders-title">Your Order History</h3>
@@ -19,7 +21,9 @@ const OrderHistory = () => {
                     <p className = 'single-order-titles-order'>Order</p>
                     <p className = 'single-order-titles-price'>Total Price</p>
                 </div>
-                {orderHistory.map((order) => {
+                {orderHistory.sort((orderOne, orderTwo) => {
+                    return orderTwo.data.orderTime - orderOne.data.orderTime
+                } ).map((order) => {
                             return(
                                 <div key = {order.id} className="single-order">
                                     <p className = 'single-order-date'>{ order.data.orderTime ? order.data.orderTime.toDate().toDateString() : new Date().toDateString}</p>

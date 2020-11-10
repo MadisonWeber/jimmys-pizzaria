@@ -7,7 +7,7 @@ import UserInfo from "../components/UserInfo";
 
 const SignUp = () => {
     
-    const { password, setPassword, email, setEmail, error, setError, hasAccount, setHasAccount, setUserLoggedIn, signInOpen, setSignInOpen, currentUser, setOrderHistory } = useContext(GlobalContext)
+    const { password, setPassword, email, setEmail, error, setError, hasAccount, setHasAccount, setUserLoggedIn, setSignInOpen, currentUser, setOrderHistory } = useContext(GlobalContext)
 
     const signUpUser = async(e) => {
         e.preventDefault()

@@ -1,17 +1,9 @@
 .App{
     min-height: 100vh;
-    background-color: tomato;
-    /* overflow-y: hidden; */
+    background-color: white;
     position: relative;
-    /* overflow-x: hidden; */
+  
 }
-
-/* .app-holder{
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-}
-*/
 
 .panel{
     scroll-snap-align: center;

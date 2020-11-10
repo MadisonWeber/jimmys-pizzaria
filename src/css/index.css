@@ -87,3 +87,55 @@ html {
         display: none;
     }
 }
+
+@media only screen and (max-width : 450px){
+    .floating-nav{
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .phone-number{
+        display: none;
+    }
+
+    .order-stats p:first-child{
+        display: none;
+    }
+
+    .single-order > p {
+        font-size: 12px;
+    }
+
+    .userInfo-previous-orders > h3{
+        font-size: 22px;
+    }
+
+    .success-signedIn{
+        font-size: 12px;
+        margin: 10px 0;
+    }
+
+    .history-one-info-holder,
+    .history-two-info-holder,
+    .history-three-info-holder,
+    .history-four-info-holder{
+        width: 250px;
+    }
+
+    .history-one-info-holder h3,
+    .history-two-info-holder h3,
+    .history-three-info-holder h3,
+    .history-four-info-holder h3{
+        font-size: 30px;
+    }
+
+
+    .history-one-info-holder p,
+    .history-two-info-holder p,
+    .history-three-info-holder p,
+    .history-four-info-holder p{
+        font-size: 14px;
+    }
+
+    
+}

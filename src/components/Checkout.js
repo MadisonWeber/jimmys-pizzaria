@@ -4,12 +4,13 @@ import { GlobalContext } from '../context/globalContext';
 import db from '../firebase/firebase'
 import firebase from 'firebase'
 import CheckoutItems from '../components/CheckoutItems';
+
 /* eslint-disable react-hooks/exhaustive-deps */
 
 const Checkout = () => {
 
 
-    const { cartItems, setCartItems, setShowCart, currentUser, setSignInOpen, openTheMenu } = useContext(GlobalContext)
+    const { cartItems, setCartItems, setShowCart, currentUser, setSignInOpen, openTheMenu  } = useContext(GlobalContext)
 
 
     const [ noItemMessage, setNoItemMessage ] = useState('No Items')
@@ -73,7 +74,7 @@ const Checkout = () => {
             )
             
             setCartItems([])
-            setNoItemMessage('Thank You For Your Purchase, It should be ready in 15-20 minuites')
+            setNoItemMessage('Thank You For Your Purchase, It should be ready in 15-20 minuites.')
             setTimeout(()=>{
                 
                 setShowCart(false)
@@ -85,8 +86,14 @@ const Checkout = () => {
 
     }
 
+    const returnToSignIn = () =>{
+        setShowCart(false)
+        setSignInOpen(true)
+    }
 
 
+
+    
     return (
         <div className = 'checkout-container'>
             <h1>Checkout</h1>
@@ -98,7 +105,9 @@ const Checkout = () => {
                 <p className="checkout-totals-total">Total :<span className = 'make-gold'> $ {cartItemsTotal.toFixed(2)}</span></p>
                 <p className="checkout-totals-total-after-tax">Total After Tax:<span className = 'make-gold'> $ {(cartItemsTotal * 1.15).toFixed(2)}</span></p>
             </div>
-            <button className = 'btn checkout-btn' onClick = {checkout}>Checkout</button>
+            {currentUser ? <button className = 'btn checkout-btn' onClick = {checkout}>Checkout</button> :
+            <button className = 'btn needs-to-sign-in' onClick = {returnToSignIn}>Sign In To Checkout</button>}
+            
         </div>
     )
 }

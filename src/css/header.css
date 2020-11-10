@@ -79,13 +79,16 @@ nav > button:hover{
 
 .cart-item-number{
     position: absolute;
-    color: white;
+    color: black;
     height: 18px;
     width: 18px;
     border-radius: 100%;
-    background-color: dodgerblue;
+    /* background-color: dodgerblue; */
+    background: url(../photos/pizza2.png) no-repeat center center/cover;
     text-align: center;
     top: -5px;
     right: -5px;
+    font-weight: 800;
+    font-size: 15px;
    
 }

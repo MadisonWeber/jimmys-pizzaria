@@ -7,7 +7,7 @@ import "../css/menu.css";
 
 const Menu = () => {
 
-    const { menu, setMenuOpen, setCartItems, cartItems, goToCheckout } = useContext(GlobalContext);
+    const { menu, setMenuOpen, setCartItems, cartItems, goToCheckout} = useContext(GlobalContext);
     const overlayRef= useRef(null)
 
 
@@ -43,6 +43,7 @@ const Menu = () => {
         })
     }   
 
+   
    
     return (
         <div className="menu-overlay" ref = {overlayRef}>
