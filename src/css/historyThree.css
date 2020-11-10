@@ -1,0 +1,56 @@
+.history-three-container{
+    height: 100vh;
+    background-color: tomato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.history-three-image{
+    height: auto;
+    width: min(345px, 35vw);
+    /* align-self: flex-end; */
+    margin-top: 20px;
+    filter: grayscale(.45) contrast(.8);
+    border-radius: 10px;
+}
+
+.history-three-image:hover{
+    filter: grayscale(0.2);
+}
+
+
+
+.history-three-info-holder{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    max-width: 400px;
+    margin-right: 100px;
+}
+
+.history-three-title{
+    align-self: flex-start;
+    color: dodgerblue;
+    font-size: 40px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.history-three-year{
+    align-self: flex-end;
+    color: orange;
+    margin-right: 25px;
+    font-size: 22px;
+}
+
+.history-three-text{
+    color: white;
+    font-size: 20px;
+    align-self: flex-end;
+    max-width: 400px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,89 @@
+
+/* 
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Cinzel', serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Nothing You Could Do', cursive;
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+   
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden !important;
+    
+}
+
+
+.btn{
+    outline-width: 0;
+    border: none;
+}
+
+
+
+@keyframes moveCircle {
+    0%{
+        transform: translateY(0);
+    }50%{
+        transform: translateY(16px);
+    }100%{
+        transform: translateY(0);
+    }
+} 
+
+@keyframes slideIn{
+    from{
+        transform: translateX(-80px);
+        opacity: 0;
+    }to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideDown{
+    from{
+        transform: translateX(340px);
+        
+    }to{
+        transform: translateY(0);
+       
+    }
+
+}
+
+@media(max-width: 960px){
+
+    .remove-image{
+        display: none;
+    }
+    .history-two-info-holder,
+    .history-one-info-holder{
+        align-self: center;
+        transform: translateY(50%);
+    }
+
+    .landing-hero-overlay{
+        flex-direction: column;
+        
+    }
+
+}
+
+@media(max-width: 600px){
+    .menu-item-toppings{
+        display: none;
+    }
+}

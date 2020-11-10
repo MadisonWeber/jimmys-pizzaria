@@ -1,0 +1,9 @@
+.logoutBtn {
+    height: 2rem;
+    width: 12rem;
+    border-radius: 8px;
+    color: white;
+    background-color: tomato;
+    margin-top: 20px;
+    /* flex: .15; */
+}

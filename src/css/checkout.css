@@ -1,0 +1,127 @@
+.checkout-container{
+    height: calc(100vh - 3rem);
+    width: 70vh;
+    background-color: rgb(65, 58, 47);
+    position: absolute;
+    top: 3rem;
+    right: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideDown 200ms ease-in;
+}   
+
+.checkout-container h1{
+    color: tomato;
+    font-size: 4rem;
+    font-family: 'Caveat', cursive;
+    align-self: flex-start;
+    margin-left: 10px;
+    letter-spacing: 2px;
+    flex: .15;
+}
+
+.checkout-btn{
+    width: 80%;
+    max-height: 3.3rem;
+    /* border-radius: 10px; */
+    margin-top: auto;
+    margin-bottom: 8px;
+    color: black;
+    border: 2px solid white;
+    background-color: rgb(82, 73, 60);
+    font-size: 1.5rem;
+    font-style: bold;
+    flex: .15;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.checkout-btn:hover{
+    background-color: white;
+}
+
+.checkout-items{
+    flex: .7;
+    background-color: rgb(82, 73, 60);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: scroll;
+
+}
+
+.checkout-items div:first-child{
+    margin-top: 50px;
+}
+
+.checkout-items div:last-child{
+    margin-bottom: 50px;
+}
+
+
+
+.checkout-item{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 3px solid rgb(168, 160, 148);
+
+}
+
+.delete-cart-item{
+    color: white;
+    background-color: tomato;
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+    flex: .2;
+    outline: none;
+}
+
+.checkout-item-name{
+    color: white;
+    font-size: 18px;
+    flex: .4;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.checkout-item-price{
+    color: sandybrown;
+    flex: .2;
+}
+
+.checkout-totals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 20px;
+    width: 60%;
+    flex: .15;
+}
+
+.make-gold{
+    color: goldenrod;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.no-items-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.no-items-container > h4{
+    color: orange;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}

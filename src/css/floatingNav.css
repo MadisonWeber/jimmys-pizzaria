@@ -1,0 +1,44 @@
+.floating-nav{
+    position: fixed;
+    bottom: 48%;
+    left: -65px;
+    height: 2px;
+    width: 200px;
+    background-color: rgba(100, 100, 100, .15);   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: rotate(90deg);
+    transition: opacity 200ms ease-in;
+    
+   
+}
+
+.fa-circle{
+    color: white;
+    font-size: 16px;
+    opacity: .6;
+}
+
+.fa-circle:hover{
+    opacity: 1;
+}
+
+.floating-item  {
+    text-decoration: none;
+    font-size: 10px; 
+    cursor: pointer;
+}
+
+
+.active{
+    color: palegreen;
+    transform: scale(1.15);
+    transition: transform 200ms ease-in;
+    opacity: 1;
+}
+
+.hidden{
+    pointer-events: none;
+    opacity: 0;
+}

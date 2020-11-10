@@ -1,0 +1,57 @@
+.history-two-container{
+    height: 100vh;
+    background-color: dodgerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.history-two-image{
+    height: auto;
+    width: 360px;
+    /* transform: translateX(-290px); */
+    margin-top: 100px;
+    filter: grayscale(.3) contrast(.8);
+    border-radius: 10px;
+    margin-right: 100px;
+}
+
+.history-two-image:hover{
+    filter: grayscale(0) contrast(1);
+}
+
+.history-two-info-holder{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+/* .history-two-text:hover, .history-two-title:hover, .history-two-year:hover{
+    transform: scale(1.05);
+} */
+
+.history-two-title{
+    align-self: flex-start;
+    color: orange;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.history-two-year{
+    align-self: flex-end;
+    color: tomato;
+    margin-right: 25px;
+    font-size: 22px;
+}
+
+.history-two-text{
+    color: white;
+    font-size: 20px;
+    align-self: flex-end;
+    max-width: 400px;
+    margin-bottom: 10px;
+}

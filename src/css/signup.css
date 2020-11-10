@@ -1,0 +1,98 @@
+.form-container{
+    
+    height: 100vh;
+    left: 10%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    background-color: rgba(20, 20, 20, .95);
+    animation: openSignIn 350ms ease-in;
+}   
+
+@keyframes openSignIn{
+    from{
+        transform: translateX(100vw);
+    }to {
+        transform: translateX(0);
+    }
+}
+
+
+.close-sign-in{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    left: 10px;
+    outline-width: 0;
+    background-color: white;
+    font-size: 26px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transition: transform 400ms ease-in-out;
+    z-index: 100;
+
+}
+
+.close-sign-in:hover{
+    transform: rotate(360deg);
+}
+
+
+form{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+.loginEmail{
+    height: 1.8rem;
+    width: 85%;
+}
+
+.signInEmail{
+    height: 1.8rem;
+    width: 85%;
+}
+
+.loginButton{
+    height: 2rem;
+    width: 65%;
+    background-color: black;
+    color: white;
+    font-size:18px;
+}
+
+.signUpError{
+    color: tomato;
+    font-style: 14px;
+    padding: 2px 5px;
+    text-align: center;
+}
+
+.toggleHasAccount{
+    border-bottom: 1px solid tomato;
+    background-color: white;
+}
+
+.toggleHasAccount,
+.loginTitle,
+.loginButton{
+    
+    animation: slideIn 400ms ease-in;
+}
+
+
+

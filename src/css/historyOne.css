@@ -1,0 +1,57 @@
+.history-one-container{
+    height: 100vh;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.history-one-info-holder{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.history-one-image{
+    height: auto;
+    width: 360px;
+    margin-left: 100px;
+    margin-top: 100px;
+    filter: grayscale(.7) contrast(.8);
+    border-radius: 10px;
+}
+
+.history-one-image:hover{
+    filter: grayscale(0) contrast(1);
+}
+
+.history-one-title{
+    align-self: flex-start;
+    color: rgb(250, 71, 40);
+    font-size: 40px;
+    letter-spacing: 2px;
+    
+}
+
+.history-one-year{
+    align-self: flex-end;
+    color: dodgerblue;
+    margin-right: 25px;
+    font-size: 22px;
+}
+
+.history-one-text{
+    color: white;
+    font-size: 20px;
+    align-self: flex-end;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+.black{
+    color: tomato;
+}

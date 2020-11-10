@@ -1,0 +1,87 @@
+.history-four-container{
+    height: 100vh;
+    width: 100%;
+    background-color: #33ce9a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  
+}
+
+.history-four-info-holder{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    max-width: 400px;
+    margin-right: 100px;
+}
+
+.history-four-title{
+    align-self: flex-start;
+    color: rgb(114, 4, 114);
+    font-size: 40px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.history-four-year{
+    align-self: flex-end;
+    color: black;
+    margin-right: 25px;
+    font-size: 22px;
+}
+
+.history-four-text{
+    color: white;
+    font-size: 20px;
+    align-self: flex-end;
+    max-width: 400px;
+    margin-bottom: 10px;
+    
+}
+
+.history-four-image{
+    height: auto;
+    width: min(345px, 35vw);
+    margin-top: 20px;
+    filter: grayscale(.5) contrast(.8);
+    border-radius: 10px;
+    margin-right: 80px;
+}
+
+.history-four-image:hover{
+    filter: grayscale(0);
+}
+
+.back-to-top{
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.back-to-top p{
+    margin-top: 18px;
+    font-size: 18px;
+}
+
+.fa-arrow-up{
+    font-size: 38px;
+    animation: moveCircle 1.8s ease-in-out infinite;
+    
+}
+
+.mission{
+    color: dodgerblue;
+    font-weight: bold;
+}

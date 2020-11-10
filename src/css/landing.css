@@ -1,0 +1,107 @@
+.landing-container{
+    height: 100vh;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    
+}
+
+.landing-hero-overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(119, 96, 74, 0.75);
+  
+    
+}
+
+.call-to-order{
+    padding: 15px;
+    padding-left: 28px;
+    border-radius: 16px;
+    font-size: 30px;
+    color: white;
+    font-weight: 800;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: transform 200ms ease-in-out;
+}
+
+.landing-title{
+    color: black;
+    font-size: clamp(2vw, 80px, 8vw);
+    letter-spacing: 4px;
+    font-family: 'Nothing You Could Do', cursive;
+    white-space: nowrap;
+  
+}
+
+.call-to-order:hover{
+    transform: scale(1.08);
+}
+
+
+.landing-hero  {
+    width: 100%;
+    height: calc(100% - 3rem);
+    position: relative;
+    background: url('../photos/potential4.jpg') no-repeat center center/cover;
+    /* background-color: tomato; */
+    background-attachment: fixed;
+}
+
+
+
+
+.start-story-btn{
+    background-color: transparent;
+    
+}
+
+.landing-img{
+    height: auto;
+    width: min(360px, 50%);
+    margin-right: 75px;
+}
+
+.begin-history{
+    color: white;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: .5rem;
+    left: 50%;
+    right: 50%;
+
+}
+
+.begin-history h3{
+    margin-bottom: 18px;
+    white-space: nowrap;
+}
+
+
+.fa-arrow-down{
+    color: white;
+    font-size: 60px;
+    margin-bottom: 30px;
+    animation: moveCircle 1.8s ease-in-out infinite;
+}
+
+
+
+.landing-description{
+    color: rgb(99, 96, 96);
+    margin-left: 3rem;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+}
