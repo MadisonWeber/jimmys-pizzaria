@@ -16,7 +16,7 @@ const HistoryTwo = () => {
     const secondPhoto = useRef(null)
     const secondExplanation = useRef(null)
     const historyTwo = useRef(null)
-    const titleRefTwo = useRef(null)
+    const descriptionRefTwo = useRef(null)
     const { setCurrentSection } = useContext(GlobalContext)
 
     useEffect(()=>{
@@ -56,7 +56,7 @@ const HistoryTwo = () => {
                 }
         })
 
-        gsap.fromTo( titleRefTwo.current, {
+        gsap.fromTo( descriptionRefTwo.current, {
             autoAlpha : 0,
             x : 0,
             y : -200,
@@ -85,9 +85,9 @@ const HistoryTwo = () => {
         <div className = 'history-two-container panel' id = 'history-two' ref = {historyTwo} >
             <img className = 'history-two-image remove-image' src={require("../photos/pizza-oven.jpeg").default} alt="" ref = {secondPhoto}/>
             <div className="history-two-info-holder" ref = {secondExplanation}>
-                <h3 className = 'history-two-title' ref = {titleRefTwo} >A New Business</h3>
+                <h3 className = 'history-two-title'  >A New Business</h3>
                 <h4 className = 'history-two-year'>1946</h4>
-                <p className = 'history-two-text' > Upon return from the war, the first thing Jimmy did was marry his high-school sweetheart, Gertrude. The second thing he did was purchase a wood-fire oven and open Jimmys Pizzaria, at the corner of Coxwell and Gerrard. With tireless experimentation, it was at this point Jimmy created his now infamous double layed crust. </p>
+                <p className = 'history-two-text' ref = {descriptionRefTwo}> Upon return from the war, the first thing Jimmy did was marry his high-school sweetheart, Gertrude. The second thing he did was purchase a wood-fire oven and open Jimmys Pizzaria, at the corner of Coxwell and Gerrard. With tireless experimentation, it was at this point Jimmy created his now infamous double layed crust. </p>
             </div>
         </div>
     )
